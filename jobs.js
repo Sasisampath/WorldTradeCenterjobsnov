@@ -14,14 +14,10 @@ window.JOBS = [
   },
   {
     id: 'hapag-mobile', company: 'Hapag-Lloyd Technology Center', initials: 'HL',
-    role: 'Mobile Application Developer — React Native', category: 'Technology',
-    location: 'Chennai', experience: '5+ years preferred', audience: 'Experienced',
-    note: 'CargoMate mobile product: React Native, TypeScript and Android integration.',
+    role: 'Explore future opportunities', location: 'Chennai',
     wtc: 'Technology Centre confirmed at WTC Chennai',
-    url: 'https://in.linkedin.com/jobs/view/mobile-application-developer-at-hapag-lloyd-technology-center-4463301832',
-    source: 'LinkedIn job listing',
-    highlight: 'Mobile engineering', caution: 'LinkedIn shows no application button',
-    careers: 'https://www.hapag-lloyd.com/en/company/career/working-on-land/working-in-tech/Chennai.html'
+    url: 'https://www.hapag-lloyd.com/en/company/career/working-on-land/working-in-tech/Chennai.html',
+    actionLabel: 'View Careers'
   },
   {
     id: 'kissflow-finance', company: 'Kissflow', initials: 'K',
@@ -45,14 +41,10 @@ window.JOBS = [
   },
   {
     id: 'maersk-ocean', company: 'A.P. Moller – Maersk', initials: 'M',
-    role: 'Ocean Customer Experience Specialist', category: 'Business',
-    location: 'Chennai', experience: 'Check job description', audience: 'Experienced',
-    note: 'Customer queries, onboarding, case management and ocean-logistics operations. Not a software-engineering vacancy.',
-    wtc: 'Chennai vacancy; exact office not confirmed',
-    url: 'https://in.linkedin.com/jobs/view/ocean-customer-experience-specialist-at-a-p-moller-maersk-4481275920',
-    source: 'LinkedIn job listing',
-    highlight: 'Customer experience', caution: 'LinkedIn shows no application button',
-    careers: 'https://www.maersk.com/careers/vacancies'
+    role: 'Explore future opportunities', location: 'Chennai',
+    wtc: 'Exact Chennai office not confirmed',
+    url: 'https://www.maersk.com/careers/vacancies',
+    actionLabel: 'View Careers'
   },
   {
     id: 'emerson-admin', company: 'Emerson', initials: 'E',

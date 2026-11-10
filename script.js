@@ -22,7 +22,7 @@
   function role(j, showLocation) {
     const past = j.eventDate && today > j.eventDate;
     const status = past ? 'Past drive · 11 Nov 2026' : j.eventLabel || j.caution;
-    const label = past ? 'Check original form' : j.eventDate ? 'Check registration' : j.caution ? 'View listing' : 'Apply now';
+    const label = past ? 'Check original form' : j.eventDate ? 'Check registration' : j.caution ? 'View listing' : j.actionLabel || 'Apply now';
     const experience = j.experience === 'Check job description' ? '' : j.experience;
     return `<section class="job-role" id="${escape(j.id)}">
       <h3>${escape(j.role)}</h3>
@@ -32,7 +32,7 @@
       <div class="job-actions">
         <details>
           <summary>View details</summary>
-          <p>${escape(j.note)}</p>
+          ${j.note ? `<p>${escape(j.note)}</p>` : ''}
           ${j.wtc ? `<p>${escape(j.wtc)}</p>` : ''}
           ${j.process ? `<p>${escape(j.process)}</p>${link('assets/rocketlane-drive.webp', 'View original poster', 'detail-link')}` : ''}
           ${j.careers ? link(j.careers, 'Browse company careers', 'detail-link') : ''}
