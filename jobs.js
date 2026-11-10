@@ -72,5 +72,42 @@ window.JOBS = [
     wtc: '13th Floor, Block A, Global Infocity Park, 40th St, Kodandarama Nagar, Perungudi, Chennai – 600096.',
     process: 'Hiring team interview, short assignment, assignment walkthrough, virtual business head interview, and culture round.',
     url: 'https://docs.google.com/forms/d/e/1FAIpQLScwdmakN-_WtN6B2vBTmDL2oU8f-FwwBztRkcnAQwTlFqyexQ/viewform'
+  },
+  {
+    "id": "alation-backend",
+    "company": "Alation",
+    "role": "AI Native Backend Engineer (Core Java, 3 Months Contract)",
+    "location": "Chennai, Tamil Nadu, India",
+    "experience": "2–6 years",
+    "note": "Requires at least 2 years of hands-on backend engineering. The posting lists hybrid work, with two days in the office.",
+    "url": "https://www.linkedin.com/jobs/view/4488174496/",
+    "caution": "LinkedIn no longer accepts applications for this role"
+  },
+  {
+    "id": "alation-software",
+    "company": "Alation",
+    "role": "Software Engineer III",
+    "location": "Greater Chennai Area",
+    "experience": "5+ years",
+    "note": "Professional experience building and shipping software products or services.",
+    "url": "https://www.linkedin.com/jobs/view/4457658526/"
+  },
+  {
+    "id": "alation-product",
+    "company": "Alation",
+    "role": "Senior Product Manager II",
+    "location": "Greater Chennai Area",
+    "experience": "5+ years",
+    "note": "Experience in product management, engineering or a similar role.",
+    "url": "https://www.linkedin.com/jobs/view/4463813440/"
+  },
+  {
+    "id": "alation-systems",
+    "company": "Alation",
+    "role": "Senior Business Systems Analyst",
+    "location": "Greater Chennai Area",
+    "experience": "5+ years",
+    "note": "Requires 5+ years in accounting, finance or financial systems and 5+ years of hands-on NetSuite administration.",
+    "url": "https://www.linkedin.com/jobs/view/4457655601/"
   }
 ];

@@ -19,20 +19,21 @@
     return `<a class="${className}" href="${escape(destination.href)}" target="_blank" rel="noopener noreferrer">${escape(label)} <span aria-hidden="true">↗</span></a>`;
   }
 
-  function role(j) {
+  function role(j, showLocation) {
     const past = j.eventDate && today > j.eventDate;
     const status = past ? 'Past drive · 11 Nov 2026' : j.eventLabel || j.caution;
     const label = past ? 'Check original form' : j.eventDate ? 'Check registration' : j.caution ? 'View listing' : 'Apply now';
     const experience = j.experience === 'Check job description' ? '' : j.experience;
     return `<section class="job-role" id="${escape(j.id)}">
       <h3>${escape(j.role)}</h3>
+      ${showLocation ? `<p class="muted">${escape(j.location)}</p>` : ''}
       ${experience ? `<p class="muted">${escape(experience)}</p>` : ''}
       ${status ? `<p class="muted">${escape(status)}</p>` : ''}
       <div class="job-actions">
         <details>
           <summary>View details</summary>
           <p>${escape(j.note)}</p>
-          <p>${escape(j.wtc)}</p>
+          ${j.wtc ? `<p>${escape(j.wtc)}</p>` : ''}
           ${j.process ? `<p>${escape(j.process)}</p>${link('assets/rocketlane-drive.webp', 'View original poster', 'detail-link')}` : ''}
           ${j.careers ? link(j.careers, 'Browse company careers', 'detail-link') : ''}
         </details>
@@ -50,13 +51,16 @@
       if (!companies.has(job.company)) companies.set(job.company, []);
       companies.get(job.company).push(job);
     }
-    list.innerHTML = Array.from(companies, ([company, roles]) => `<article class="job-card">
+    list.innerHTML = Array.from(companies, ([company, roles]) => {
+      const sharedLocation = roles.every(job => job.location === roles[0].location);
+      return `<article class="job-card">
       <div class="job-card-top">
         <h2>${escape(company)}</h2>
-        <span class="location">${escape([...new Set(roles.map(job => job.location))].join(' · '))}</span>
+        ${sharedLocation ? `<span class="location">${escape(roles[0].location)}</span>` : ''}
       </div>
-      ${roles.map(role).join('')}
-    </article>`).join('');
+      ${roles.map(job => role(job, !sharedLocation)).join('')}
+    </article>`;
+    }).join('');
     count.textContent = `${companies.size} matching companies`;
     empty.hidden = companies.size > 0;
   }
