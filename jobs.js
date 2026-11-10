@@ -63,5 +63,14 @@ window.JOBS = [
     url: 'https://in.linkedin.com/jobs/view/application-administrator-ii-at-emerson-4414580626',
     source: 'LinkedIn job listing',
     highlight: 'IT applications'
+  },
+  {
+    id: 'rocketlane-drive', company: 'Rocketlane',
+    role: 'Product Specialist', location: 'Perungudi, Chennai', experience: '1–5 years',
+    eventDate: '2026-11-11', eventLabel: '11 Nov 2026 hiring drive',
+    note: 'In-person US shift hiring drive on Wednesday, 11 November 2026. Keep the full day free. Google sign-in is required. If sign-in stalls in Instagram, open the page in your phone’s browser. Confirm registration before travelling.',
+    wtc: '13th Floor, Block A, Global Infocity Park, 40th St, Kodandarama Nagar, Perungudi, Chennai – 600096.',
+    process: 'Hiring team interview, short assignment, assignment walkthrough, virtual business head interview, and culture round.',
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLScwdmakN-_WtN6B2vBTmDL2oU8f-FwwBztRkcnAQwTlFqyexQ/viewform'
   }
 ];
