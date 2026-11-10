@@ -13,7 +13,7 @@
   <meta property="og:image" content="/assets/rocketlane-drive.webp">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
   <script defer src="jobs.js?v=4"></script>
   <script defer src="script.js?v=4"></script>
 </head>
@@ -31,9 +31,11 @@
   </header>
   <main class="container" id="top">
     <h1>Chennai Job Openings</h1>
-    <p class="subtitle">Find companies and apply directly.</p>
-    <div class="search-panel" role="search">
-      <label class="search-box" for="job-search"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="none"><circle cx="10.8" cy="10.8" r="7" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="sr-only">Search companies or job titles</span><input id="job-search" type="search" placeholder="Search company or job role" autocomplete="off" enterkeyhint="search"></label>
+    <div class="sticky-search">
+      <p class="subtitle">Find companies and apply directly.</p>
+      <div class="search-panel" role="search">
+        <label class="search-box" for="job-search"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="none"><circle cx="10.8" cy="10.8" r="7" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="sr-only">Search companies or job titles</span><input id="job-search" type="search" placeholder="Search company or job role" autocomplete="off" enterkeyhint="search"></label>
+      </div>
     </div>
     <div id="openings">
       <p id="result-count" class="sr-only" role="status"></p>
